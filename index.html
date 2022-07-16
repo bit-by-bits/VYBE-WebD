@@ -12,11 +12,22 @@
     <title>VYBE</title>
   </head>
   <body>
+    <aside class="ham">
+      <i class="fa-solid fa-arrow-right"></i>
+      <img class="q-ham" src="Assets/q-sign.png" />
+      <div class="ham-elements">
+        <a class="ham-link" href="#page-1">Home</a
+        ><a class="ham-link" href="#how-it-works">How it works</a
+        ><a class="ham-link" href="#about-vybe">About Vybe</a
+        ><a class="ham-link" href="#testimonials">Testimonials</a
+        ><a class="ham-link" href="#contact-us">Contact Us</a>
+      </div>
+    </aside>
     <header>
       <nav>
-        <a href=""><img class="q-sign" src="Assets/q-sign.png" /></a>
+        <img class="q-sign" src="Assets/q-sign.png" />
         <div class="nav-elements">
-          <a class="scroll" href="#home">Home</a
+          <a class="scroll" href="#page-1">Home</a
           ><a class="scroll" href="#how-it-works">How it works</a
           ><a class="scroll" href="#about-vybe">About Vybe</a
           ><a class="scroll" href="#testimonials">Testimonials</a
@@ -26,7 +37,7 @@
       </nav>
     </header>
     <main>
-      <article class="page-1">
+      <article id="page-1">
         <img src="Assets/hand.png" />
         <div id="home">
           <div class="home-title">
@@ -37,7 +48,7 @@
           </div>
         </div>
       </article>
-      <a href="" class="get-vybe">Get&nbsp;your&nbsp;VYBE!</a>
+      <a href="#contact-us" class="get-vybe">Get&nbsp;your&nbsp;VYBE!</a>
       <article class="vybe-extra-one">
         Vybe, a DCGI grade vibrating kinetic anesthesia device, offers optimum
         relief during medical procedures.
@@ -119,8 +130,7 @@
         <div class="vybe-data">
           <div class="vb-title">
             Our research has recorded a significant increase in follow-ups and
-            the ability to conduct certain procedures without anaesthesia.<br /><br />Check
-            out the data
+            the ability to conduct certain procedures without anaesthesia.
           </div>
           <div class="vb-grid">
             <div>
@@ -221,20 +231,42 @@
       <article id="contact-us">
         <div class="contact-form">
           <form id="form-1">
-            <div>
-              <input placeholder="NAME" type="text" class="form-1-1" /><input
-                type="text"
-                placeholder="PHONE"
-                class="form-1-2"
-              />
-            </div>
-            <input type="text" placeholder="EMAIL" class="form-1-3" /><textarea
-              rows="4"
+            <input
+              autocomplete="off"
+              required
+              title="Enter your name here."
+              type="text"
+              placeholder="NAME"
+              class="form-input"
+            />
+            <input
+              autocomplete="off"
+              required
+              title="Enter your number here."
+              type="text"
+              placeholder="PHONE"
+              class="form-input"
+            />
+            <input
+              autocomplete="off"
+              required
+              title="Enter your city here."
+              type="text"
               placeholder="CITY"
-              cols="40"
-              class="form-1-4"
-            ></textarea
-            ><input type="submit" value="Submit" />
+              class="form-input"
+            />
+            <input
+              autocomplete="off"
+              required
+              title="Enter your email here."
+              type="text"
+              placeholder="EMAIL"
+              class="form-input"
+            />
+            <div>
+              <input type="submit" value="Submit" class="input-btn" />
+              <input type="reset" value="Clear" class="input-btn" />
+            </div>
           </form>
           <div class="form-2">
             <div class="contact-form-title">
