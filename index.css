@@ -1243,151 +1243,29 @@ body main footer span {
 }
 
 @media screen and (min-width: 2100px) {
-  .ham {
-    gap: 4rem !important;
-  }
-  .q-ham {
-    height: 8rem !important;
-  }
-  .ham-elements {
-    gap: 3rem !important;
-  }
-  .ham-link {
-    font-size: 3rem !important;
-  }
-  nav {
-    padding: 2rem 4rem !important;
-  }
-  .q-sign {
-    height: 8rem !important;
-  }
-  .menu-sign {
-    height: 4rem !important;
-  }
   .scroll {
-    font-size: 2.6rem !important;
+    font-size: 1.7rem !important;
   }
   .home-title {
-    font-size: 6.4rem !important;
+    font-size: 5rem !important;
   }
-  .home-content {
-    font-size: 3rem !important;
+  #how-it-works {
+    padding: 10rem !important;
   }
-  .get-vybe {
-    font-size: 3rem !important;
-  }
-  .vybe-extra-one {
-    font-size: 2.8rem !important;
-  }
-  .hiw-title {
-    font-size: 6rem !important;
-  }
-  .hiw-content {
-    font-size: 3rem !important;
-    line-height: normal;
-  }
-  .hiw-bullets {
-    font-size: 2.4rem !important;
-    gap: 1rem 2rem !important;
-  }
-  .hiw-bullets img {
-    height: 4rem !important;
-    width: 4rem !important;
-  }
-  .feature {
-    font-size: 2.4rem !important;
-    gap: 2rem !important;
-  }
-  #about-vybe {
-    gap: 3rem !important;
-    -webkit-transform: translateY(5rem) !important;
-    transform: translateY(5rem) !important;
-  }
-  #about-vybe img {
-    -webkit-transform: scale(1.5) !important;
-    transform: scale(1.5) !important;
-  }
-  .hand-band {
-    top: -40rem !important;
-  }
-  .vybe-extra-two {
-    font-size: 3rem !important;
-    margin-top: -2rem !important;
-  }
-  .vb-title {
-    font-size: 3rem !important;
-  }
-  .vb-grid-item {
-    font-size: 10rem !important;
-  }
-  .vb-grid span {
-    font-size: 2.6rem !important;
-  }
-  body {
-    --testiheight: 1200px;
-  }
-  .doctor-image {
-    width: 400px !important;
-    height: 400px !important;
-  }
-  .doctor-name {
-    font-size: 3.2rem !important;
-  }
-  .doctor-clinic {
-    font-size: 2rem !important;
-  }
-  .doctor-id {
+  #how-it-works .hiw-content,
+  #how-it-works .hiw-bullets {
     font-size: 1.6rem !important;
+    line-height: normal !important;
   }
-  .doctor-remarks {
-    font-size: 2.35rem !important;
-  }
-  .form-input,
-  .input-btn {
-    height: 5rem !important;
-    font-size: 2.4rem !important;
-  }
-  ::-webkit-input-placeholder {
-    font-size: 2.2rem !important;
-  }
-  :-ms-input-placeholder {
-    font-size: 2.2rem !important;
-  }
-  ::-ms-input-placeholder {
-    font-size: 2.2rem !important;
-  }
-  ::placeholder {
-    font-size: 2.2rem !important;
-  }
-  .contact-message {
-    font-size: 8rem !important;
-    gap: 2rem !important;
-    margin: 4rem 0 !important;
-  }
-  .contact-form-title {
-    font-size: 3.4rem !important;
-    font-weight: 800 !important;
-  }
-  .contact-form-message {
-    font-size: 2.4rem !important;
-  }
-  .cfc-one,
-  .cfc-two {
-    font-size: 2.6rem !important;
-  }
-  .contact-form-extra {
-    font-size: 2.4rem !important;
-  }
-  .contact-form-logos {
-    font-size: 2.4rem !important;
-    padding: 2rem 1rem !important;
+  .page-3 .feature {
+    margin: 3rem;
     gap: 2rem !important;
   }
-  footer span {
-    font-size: 2.4rem !important;
+  .page-3 .hand-band {
+    top: -50rem !important;
   }
-  footer img {
-    height: 8rem !important;
+  .page-3 .vybe-extra-two {
+    margin-top: -15rem !important;
   }
 }
 
