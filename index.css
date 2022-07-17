@@ -860,8 +860,8 @@ body
   .contact-form
   .form-2
   .contact-form-content
-  a:nth-child(10n + 2) {
-  margin: 1rem 0 2rem 0;
+  a {
+    margin-bottom: 1rem !important;
 }
 
 body main #contact-us .contact-form .form-2 .contact-form-extra {
@@ -1727,6 +1727,7 @@ body main footer span {
 @media screen and (max-width: 450px) {
   body {
     --testiheight: 700px;
+    --testiwidth: 88vw;
   }
   .home-title {
     font-size: 2.2rem !important;
@@ -1849,4 +1850,9 @@ body main footer span {
     margin: 2rem auto !important;
   }
 }
-/*# sourceMappingURL=index.css.map */
+
+@media screen and (max-width: 350px) {
+  body{
+    --testiheight: 660px;
+  }
+}
