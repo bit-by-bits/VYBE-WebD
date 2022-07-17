@@ -6,9 +6,7 @@ const ham = document.querySelector(".ham");
 
 let not_counted_before = !0;
 let index = 2;
-let ham_right = screen.width > 860 ? 40 : 80;
-ham.style.right = "-" + ham_right + "vw";
-ham.style.width = ham_right + "vw";
+let is_open = false;
 
 function remove_classes() {
   car_left.classList.remove("left");
@@ -84,19 +82,47 @@ document.getElementById("move-right").addEventListener("click", () => {
 });
 
 document.querySelector(".menu-sign").addEventListener("click", () => {
-  if (ham_right == 40) ham.style.animation = "ham-in 0.6s linear";
-  else ham.style.animation = "ham-in-2 0.6s linear";
+  ham.style.animation = "ham-in 0.6s linear";
 
   setTimeout(() => {
     ham.style.right = "0";
   }, 600);
+
+  is_open = true;
 });
 
 document.querySelector(".fa-arrow-right").addEventListener("click", () => {
-  if (ham_right == 40) ham.style.animation = "ham-out 0.6s linear";
-  else ham.style.animation = "ham-out-2 0.6s linear";
+  close_ham();
+});
+
+function close_ham() {
+  ham.style.animation = "ham-out 0.6s linear";
 
   setTimeout(() => {
-    ham.style.right = "-" + ham_right + "vw";
+    ham.style.right = "-50vw";
   }, 600);
+
+  is_open = false;
+}
+
+window.addEventListener("click", (element) => {
+  if (is_open) {
+    let e = element.target.className;
+    if (e != "menu-sign" && e != "ham" && e != "ham-link" && e != "q-ham")
+      close_ham();
+  }
 });
+
+if (screen.width < 861) {
+  document.getElementById("page-1").innerHTML = `
+<img src="Assets/hand.png" />
+<div id="home">
+    <div class="home-title">
+      <span>Needles will</span><span>Never</span><span>Sting Again!</span>
+    </div>
+    <div class="home-content">
+      Pain-free procedures are now at your fingertips
+    </div>
+  </div>
+  `;
+}
