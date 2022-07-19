@@ -37,6 +37,7 @@ html {
 body {
   --testiwidth: 35vw;
   --testiheight: 800px;
+  user-select: none;
   background-position: top;
   background-size: contain;
   background-image: url("../Assets/frame.png"),
@@ -134,6 +135,7 @@ body aside .ham-elements .ham-link:hover {
   from {
     right: -50vw;
   }
+
   to {
     right: 0;
   }
@@ -143,6 +145,7 @@ body aside .ham-elements .ham-link:hover {
   from {
     right: -50vw;
   }
+
   to {
     right: 0;
   }
@@ -152,6 +155,7 @@ body aside .ham-elements .ham-link:hover {
   from {
     right: 0;
   }
+
   to {
     right: -50vw;
   }
@@ -161,6 +165,7 @@ body aside .ham-elements .ham-link:hover {
   from {
     right: 0;
   }
+
   to {
     right: -50vw;
   }
@@ -268,7 +273,7 @@ body main #page-1 #home {
 body main #page-1 #home .home-title {
   color: #03658c;
   font-weight: 500;
-  font-size: 3.5rem;
+  font-size: 3.35rem;
   letter-spacing: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,7 +302,7 @@ body main #page-1 #home .home-title span {
 body main #page-1 #home .home-content {
   color: #2897b0;
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   letter-spacing: 1px;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -313,7 +318,7 @@ body main .get-vybe {
   padding: 0.8rem 1.5rem;
   color: white;
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 1.6rem;
   letter-spacing: 3px;
   border: 4px solid #03658c;
   border-radius: 10px;
@@ -335,7 +340,7 @@ body main .get-vybe:hover {
 body main .vybe-extra-one {
   color: #03658c;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 1px;
   font-family: "Playfair Display";
   width: 75vw;
@@ -368,23 +373,24 @@ body main .page-2 #how-it-works {
 body main .page-2 #how-it-works .hiw-title {
   color: #03658c;
   font-weight: 500;
-  font-size: 3.3rem;
+  font-size: 3rem;
+  font-weight: bold;
   letter-spacing: 1px;
   font-family: "Playfair Display";
 }
 
 body main .page-2 #how-it-works .hiw-content {
-  margin: 1rem 0 2rem 0;
+  margin: 2rem 0 3rem 0;
   color: #0389a6;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   letter-spacing: 0px;
 }
 
 body main .page-2 #how-it-works .hiw-bullets {
   color: #03658c;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 0px;
   display: -ms-grid;
   display: grid;
@@ -538,7 +544,7 @@ body main .page-4 .vybe-data .vb-grid div div {
 body main .page-4 .vybe-data .vb-grid div span {
   color: #002649;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 1px;
 }
 
@@ -854,14 +860,8 @@ body main #contact-us .contact-form .form-2 .contact-form-content a:hover {
   transition: all 0.3s;
 }
 
-body
-  main
-  #contact-us
-  .contact-form
-  .form-2
-  .contact-form-content
-  a {
-    margin-bottom: 1rem !important;
+body main #contact-us .contact-form .form-2 .contact-form-content a {
+  margin-bottom: 1rem !important;
 }
 
 body main #contact-us .contact-form .form-2 .contact-form-extra {
@@ -957,10 +957,12 @@ body main footer span {
     -webkit-transform: none;
     transform: none;
   }
+
   50% {
     -webkit-transform: translateY(-1rem);
     transform: translateY(-1rem);
   }
+
   100% {
     -webkit-transform: none;
     transform: none;
@@ -972,10 +974,12 @@ body main footer span {
     -webkit-transform: none;
     transform: none;
   }
+
   50% {
     -webkit-transform: translateY(-1rem);
     transform: translateY(-1rem);
   }
+
   100% {
     -webkit-transform: none;
     transform: none;
@@ -987,26 +991,32 @@ body main footer span {
     -webkit-transform: translateX(1px);
     transform: translateX(1px);
   }
+
   5% {
     -webkit-transform: translateX(-1px);
     transform: translateX(-1px);
   }
+
   11% {
     -webkit-transform: translateX(1px);
     transform: translateX(1px);
   }
+
   15% {
     -webkit-transform: translateX(-1px);
     transform: translateX(-1px);
   }
+
   21% {
     -webkit-transform: translateX(2px);
     transform: translateX(2px);
   }
+
   26% {
     -webkit-transform: translateX(1px);
     transform: translateX(1px);
   }
+
   27% {
     -webkit-transform: translateX(0px);
     transform: translateX(0px);
@@ -1018,26 +1028,32 @@ body main footer span {
     -webkit-transform: translateX(1px);
     transform: translateX(1px);
   }
+
   5% {
     -webkit-transform: translateX(-1px);
     transform: translateX(-1px);
   }
+
   11% {
     -webkit-transform: translateX(1px);
     transform: translateX(1px);
   }
+
   15% {
     -webkit-transform: translateX(-1px);
     transform: translateX(-1px);
   }
+
   21% {
     -webkit-transform: translateX(2px);
     transform: translateX(2px);
   }
+
   26% {
     -webkit-transform: translateX(1px);
     transform: translateX(1px);
   }
+
   27% {
     -webkit-transform: translateX(0px);
     transform: translateX(0px);
@@ -1048,49 +1064,46 @@ body main footer span {
   .ham {
     gap: 3rem !important;
   }
+
   .q-ham {
     height: 7rem !important;
   }
+
   .ham-link {
     font-size: 1.7rem !important;
   }
+
   .vybe-extra-two {
     font-size: 1.5rem !important;
     margin: 4rem auto !important;
     width: 90vw !important;
   }
-  .hiw-title {
-    font-size: 3.6rem !important;
-  }
-  .hiw-content {
-    font-size: 1.4rem !important;
-    line-height: 1.5rem;
-  }
-  .hiw-bullets {
-    font-size: 1.1rem !important;
-  }
+
   .hiw-bullets img {
     height: 2.5rem !important;
     width: 2.5rem !important;
   }
+
   .q-sign {
     height: 6rem !important;
   }
+
   .scroll {
     font-size: 1.4rem !important;
   }
+
   .menu-sign {
     height: 2.4rem !important;
   }
+
   .hand-band {
     top: -26rem !important;
   }
+
   .feature {
     font-size: 1.1rem !important;
   }
-  .vb-title {
-    font-size: 1.6rem !important;
-  }
+
   footer span {
     font-size: 1.4rem !important;
   }
@@ -1102,111 +1115,144 @@ body main footer span {
     height: 3rem !important;
     font-size: 1.4rem !important;
   }
+
   ::-webkit-input-placeholder {
     font-size: 1.3rem !important;
   }
+
   :-ms-input-placeholder {
     font-size: 1.3rem !important;
   }
+
   ::-ms-input-placeholder {
     font-size: 1.3rem !important;
   }
+
   ::placeholder {
     font-size: 1.3rem !important;
   }
+
   .cfc-two,
   .cfc-one {
     margin: 0 !important;
     font-size: 1.7rem !important;
   }
+
   .contact-form-extra {
     font-size: 1.5rem !important;
   }
+
   .contact-form-message {
     margin: 1rem 0 !important;
     font-size: 1.6rem !important;
   }
+
   .contact-message {
     font-size: 6rem !important;
     line-height: 6rem !important;
   }
+
   .contact-message span {
     margin-bottom: 0.6rem !important;
   }
+
   .doctor-name {
     font-size: 1.8rem !important;
   }
+
   .doctor-clinic {
     font-size: 1.2rem !important;
   }
+
   .doctor-id {
     font-size: 1.1rem !important;
   }
+
   .doctor-remarks {
     font-size: 1.35rem !important;
   }
+
   .contact-form-title {
     font-size: 2.2rem !important;
   }
+
   .vb-title {
     font-size: 1.7rem !important;
   }
+
   .vb-grid span {
     font-size: 1.4rem !important;
   }
+
   .contact-form-content {
     padding: 2rem 0 !important;
   }
+
   .vybe-extra-two {
     font-size: 1.7rem !important;
     margin-top: 2rem !important;
   }
+
   #about-vybe {
     width: 44vw !important;
   }
+
   #about-vybe img {
     -webkit-transform: scale(1.25) !important;
     transform: scale(1.25) !important;
   }
+
   .feature {
     font-size: 1.5rem !important;
   }
+
   .hand-band {
     top: -30rem !important;
   }
+
   .hiw-title {
     font-size: 4rem !important;
     font-weight: 600 !important;
   }
+
   .hiw-content {
     font-size: 1.5rem !important;
     letter-spacing: 1px !important;
   }
+
   .hiw-bullets {
     font-size: 1.4rem !important;
   }
+
   .hiw-bullets img {
     height: 2.8rem !important;
     width: 2.8rem !important;
   }
+
   .get-vybe {
     font-size: 2.6rem !important;
   }
+
   .home-title {
     font-size: 4.2rem !important;
   }
+
   .scroll {
     font-size: 1.6rem !important;
   }
+
   footer span {
     font-size: 1.6rem !important;
   }
+
   #page-1 {
     margin-top: 3rem !important;
   }
+
   .home-content {
     font-size: 2rem !important;
   }
+
   .vybe-extra-one {
     margin: 6rem auto !important;
   }
@@ -1216,39 +1262,50 @@ body main footer span {
   .contact-form-extra {
     margin-bottom: 1.5rem !important;
   }
+
   .scroll {
     font-size: 1.8rem !important;
   }
+
   #home {
     padding-left: 20rem !important;
   }
+
   .home-title {
     font-size: 5.4rem !important;
   }
+
   .home-content {
     font-size: 2.2rem !important;
   }
+
   #how-it-works {
     padding-left: 8rem !important;
   }
+
   #how-it-works .hiw-title {
     font-size: 4.4rem !important;
   }
+
   #how-it-works .hiw-content,
   #how-it-works .hiw-bullets {
     font-size: 1.8rem !important;
     line-height: normal !important;
   }
+
   #how-it-works .hiw-content {
     margin: 4rem 0 5rem 0 !important;
   }
+
   #how-it-works .hiw-bullets {
     gap: 2rem 3rem !important;
   }
+
   #contact-us {
     padding: 5rem 15rem !important;
     padding-right: 20rem !important;
   }
+
   #contact-us .contact-message {
     display: -ms-grid !important;
     display: grid !important;
@@ -1260,29 +1317,36 @@ body main footer span {
     -ms-grid-columns: auto auto;
     grid-template-columns: auto auto;
   }
+
   #contact-us .input-btn,
   #contact-us .form-input {
     width: 40vw !important;
   }
+
   #contact-us div .input-btn {
     width: calc(20vw - 2.5px) !important;
   }
+
   .page-3 {
     margin-top: -1rem !important;
     padding-top: 3rem !important;
   }
+
   .page-3 .feature {
     font-size: 1.6rem !important;
     margin: 3rem;
     gap: 2rem !important;
   }
+
   .page-3 .hand-band {
     top: -50rem !important;
   }
+
   .page-3 .vybe-extra-two {
     margin-top: -15rem !important;
     font-size: 2rem !important;
   }
+
   .vb-title {
     font-size: 2rem !important;
   }
@@ -1292,31 +1356,40 @@ body main footer span {
   body {
     --testiwidth: 45vw;
   }
+
   .left {
     left: calc(-1 * var(--testiwidth) / 3) !important;
   }
+
   .right {
     left: calc(var(--testiwidth) / 3) !important;
   }
+
   #home {
     padding-left: 2rem !important;
   }
+
   .home-title {
     font-size: 3.2rem !important;
   }
+
   .home-content {
     font-size: 1.2rem !important;
   }
+
   .hand-band {
     top: -18rem !important;
   }
+
   .vybe-extra-two {
     width: 80vw !important;
     margin: 10rem auto 3rem auto !important;
   }
+
   .ear-band-group {
     top: 3rem !important;
   }
+
   .page-3 {
     top: -2rem !important;
   }
@@ -1326,24 +1399,31 @@ body main footer span {
   body {
     --testiwidth: 60vw;
   }
+
   nav {
     padding: 1rem 2rem !important;
   }
+
   .left {
     left: calc(-1 * var(--testiwidth) / 7) !important;
   }
+
   .right {
     left: calc(var(--testiwidth) / 7) !important;
   }
+
   .vb-grid-item {
     font-size: 6rem !important;
   }
+
   body main #contact-us {
     padding: 4rem !important;
   }
+
   body main #contact-us .form-input {
     width: 40vw !important;
   }
+
   body main #contact-us .input-btn {
     width: calc(20vw - 2.5px) !important;
   }
@@ -1353,6 +1433,7 @@ body main footer span {
   .nav-elements {
     gap: 1rem !important;
   }
+
   .nav-elements a {
     font-size: 1.1rem !important;
     letter-spacing: 0 !important;
@@ -1373,31 +1454,39 @@ body main footer span {
     background-image: url("../Assets/frame2.png"),
       linear-gradient(#d7f1fc, white);
   }
+
   .contact-form-message {
     margin-bottom: 1.8rem !important;
   }
+
   .page-3 {
     position: initial !important;
   }
+
   .left,
   .right {
     left: 0 !important;
   }
+
   #move-left,
   #move-right {
     display: none !important;
   }
+
   .nav-elements {
     display: none !important;
   }
+
   .q-sign,
   .menu-sign {
     margin: 0rem 3rem;
     height: 5rem !important;
   }
+
   .menu-sign {
     height: 2.4rem !important;
   }
+
   #page-1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1406,6 +1495,7 @@ body main footer span {
     height: 50rem;
     margin-top: 0 !important;
   }
+
   #page-1 img {
     width: 70vw !important;
     -webkit-transform: translateY(-3rem) rotate(-90deg) !important;
@@ -1427,6 +1517,7 @@ body main footer span {
     );
     mask-image: linear-gradient(to left, black 70%, rgba(0, 0, 0, 0));
   }
+
   #page-1 #home {
     width: 80vw !important;
     display: -webkit-box;
@@ -1444,6 +1535,7 @@ body main footer span {
     align-items: center;
     text-align: center !important;
   }
+
   #page-1 #home .home-title {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -1456,28 +1548,33 @@ body main footer span {
     flex-wrap: wrap;
     gap: 1rem !important;
   }
+
   .get-vybe {
     font-size: 1rem !important;
     padding: 0.5rem 0.8rem !important;
     border-radius: 15px !important;
   }
+
   .vybe-extra-one {
     font-size: 1.6rem !important;
     margin-bottom: 0 !important;
     width: 90vw !important;
     letter-spacing: 0 !important;
   }
+
   .page-2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
+
   .page-2 .ear-band-group .ear-band {
     z-index: 1 !important;
     width: 50vw !important;
     position: relative !important;
   }
+
   .page-2 .ear-band-group .circle {
     z-index: 0 !important;
     width: 50vw !important;
@@ -1485,6 +1582,7 @@ body main footer span {
     top: calc(100% - 50vw) !important;
     left: calc(50% - 30vw) !important;
   }
+
   .page-2 #how-it-works {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1504,20 +1602,24 @@ body main footer span {
     margin-bottom: 5rem;
     width: 80vw !important;
   }
+
   .page-2 #how-it-works .hiw-title {
     font-weight: bold;
   }
+
   .page-2 #how-it-works .hiw-bullets {
     -ms-grid-columns: auto !important;
     grid-template-columns: auto !important;
     justify-items: center;
   }
+
   .page-2 #how-it-works .hiw-bullets span {
     color: #0389a6;
     font-weight: 400;
     font-size: 1.2rem;
     letter-spacing: 0px;
   }
+
   .page-3 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1533,47 +1635,58 @@ body main footer span {
     -ms-flex-align: center;
     align-items: center;
   }
+
   .page-3 .mini-band,
   .page-3 .mini-vybe-band {
     display: block !important;
     position: relative !important;
     width: 100vw;
   }
+
   .page-3 .mini-band {
     margin-top: 1rem;
   }
+
   .page-3 .mini-vybe-band {
     margin: -1rem 0 5rem 0;
   }
+
   .page-3 #about-vybe {
     margin-right: 0 !important;
     width: 90vw !important;
   }
+
   .page-3 #about-vybe .feature {
     font-size: 1.2rem !important;
   }
+
   .page-3 .hand-band,
   .page-3 .vybe-band {
     display: none;
   }
+
   .page-3 .vybe-extra-two {
     top: 0rem !important;
     font-size: 1.4rem !important;
     width: 70vw !important;
     margin: 5rem auto !important;
   }
+
   .page-4 {
     margin-top: -3rem !important;
   }
+
   .page-4 .vb-grid {
     -ms-grid-columns: auto !important;
     grid-template-columns: auto !important;
     max-width: 500px !important;
     margin: 0 auto;
   }
+
   .page-4 .vb-grid .vb-grid-item {
     font-size: 8rem !important;
   }
+
   .page-4 .vb-grid span {
     font-size: 1.5rem !important;
   }
@@ -1589,9 +1702,11 @@ body main footer span {
   .contact-form-title {
     font-size: 1.6rem !important;
   }
+
   .contact-form-message {
     font-size: 1rem !important;
   }
+
   .contact-form-content a {
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -1604,22 +1719,28 @@ body main footer span {
   #page-1 {
     height: 45rem !important;
   }
+
   #home {
     padding-left: 0 !important;
   }
+
   .q-sign {
     height: 4rem !important;
   }
+
   .menu-sign {
     height: 2rem !important;
   }
+
   .home-title {
     width: 80vw !important;
     font-size: 3rem !important;
   }
+
   nav {
     padding: 1rem !important;
   }
+
   .page-3 #about-vybe .feature {
     font-size: 1rem !important;
   }
@@ -1629,23 +1750,29 @@ body main footer span {
   #page-1 img {
     width: 90vw !important;
   }
+
   .hiw-title {
     font-size: 2.6rem !important;
   }
+
   .hiw-content,
   .hiw-bullets span {
     font-size: 1rem !important;
   }
+
   .contact-form-title {
     font-size: 1.4rem !important;
   }
+
   .contact-form-message {
     font-size: 0.9rem !important;
     margin: 1rem 0 !important;
   }
+
   .contact-form-content a {
     font-size: 1rem !important;
   }
+
   .contact-message {
     font-size: 4rem !important;
   }
@@ -1655,6 +1782,7 @@ body main footer span {
   body {
     --testiheight: 830px;
   }
+
   footer span {
     font-size: 1rem !important;
   }
@@ -1665,47 +1793,60 @@ body main footer span {
     width: 250px !important;
     height: 250px !important;
   }
+
   body {
     --testiheight: 750px;
   }
+
   .home-title {
     width: 90vw !important;
     font-size: 2.6rem !important;
   }
+
   .home-content {
     font-size: 1rem !important;
   }
+
   .q-sign,
   .menu-sign {
     margin: 0 !important;
   }
+
   #page-1 {
     height: 40rem !important;
   }
+
   #home {
     -webkit-transform: translateY(30px) !important;
     transform: translateY(30px) !important;
   }
+
   .doctor-name {
     font-size: 1.5rem !important;
   }
+
   .doctor-clinic,
   .doctor-id {
     font-size: 0.85rem !important;
   }
+
   .doctor-remarks {
     font-size: 1rem !important;
   }
+
   .doctor-stars {
     margin: 0 !important;
   }
+
   .doctor-stars img {
     width: 1.5rem !important;
     height: 1.5rem !important;
   }
+
   body main #contact-us {
     padding: 4rem 2rem !important;
   }
+
   .form-2 {
     max-width: 50vw !important;
   }
@@ -1715,6 +1856,7 @@ body main footer span {
   #page-1 img {
     width: 100vw !important;
   }
+
   body {
     background-image: url("../Assets/frame3.png"),
       -webkit-gradient(linear, left top, left bottom, from(#d7f1fc), to(white));
@@ -1729,13 +1871,16 @@ body main footer span {
     --testiheight: 700px;
     --testiwidth: 88vw;
   }
+
   .home-title {
     font-size: 2.2rem !important;
     font-weight: 600 !important;
   }
+
   .home-content {
     width: 80vw !important;
   }
+
   body main #contact-us {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1744,11 +1889,13 @@ body main footer span {
     text-align: center !important;
     gap: 3rem;
   }
+
   body main #contact-us .contact-message {
     -webkit-box-align: center !important;
     -ms-flex-align: center !important;
     align-items: center !important;
   }
+
   body main #contact-us #form-1,
   body main #contact-us .form-2 {
     width: 70vw !important;
@@ -1757,17 +1904,21 @@ body main footer span {
     -ms-flex-align: center !important;
     align-items: center !important;
   }
+
   body main #contact-us .form-input {
     width: 70vw !important;
   }
+
   body main #contact-us .input-btn {
     width: calc(35vw - 2.5px) !important;
   }
+
   body main #contact-us .contact-form-content {
     -webkit-box-align: center !important;
     -ms-flex-align: center !important;
     align-items: center !important;
   }
+
   body main #contact-us .contact-form-logos {
     width: 100%;
     gap: 1rem;
@@ -1775,17 +1926,21 @@ body main footer span {
     -ms-flex-pack: center;
     justify-content: center;
   }
+
   footer span {
     width: 80vw;
     text-align: center;
   }
+
   .doctor-name {
     font-size: 1.3rem !important;
   }
+
   .doctor-clinic,
   .doctor-id {
     font-size: 0.75rem !important;
   }
+
   .doctor-remarks {
     font-size: 0.9rem !important;
   }
@@ -1795,33 +1950,42 @@ body main footer span {
   #page-1 {
     height: 35rem !important;
   }
+
   #home {
     -webkit-transform: none !important;
     transform: none !important;
   }
+
   body {
     --testiheight: 630px;
   }
+
   .doctor-name {
     font-size: 1.15rem !important;
     margin: 0.5rem 0 !important;
   }
+
   .doctor-clinic {
     margin: 0 !important;
   }
+
   .doctor-clinic,
   .doctor-id {
     font-size: 0.65rem !important;
   }
+
   .doctor-remarks {
     font-size: 0.75rem !important;
   }
+
   .page-3 #about-vybe .feature {
     font-size: 0.85rem !important;
   }
+
   .page-4 .vb-grid .vb-grid-item {
     font-size: 5rem !important;
   }
+
   .page-4 .vb-grid span {
     font-size: 1.2rem !important;
   }
@@ -1831,28 +1995,34 @@ body main footer span {
   nav {
     padding: 1rem 1.5rem !important;
   }
+
   .q-sign {
     height: 3rem !important;
   }
+
   .menu-sign {
     height: 1.8rem !important;
   }
+
   #page-1 {
     height: 32rem !important;
   }
+
   #home {
     padding-top: 2rem !important;
   }
+
   #home .home-title {
     font-size: 2rem !important;
   }
+
   .vybe-extra-one {
     margin: 2rem auto !important;
   }
 }
 
 @media screen and (max-width: 350px) {
-  body{
+  body {
     --testiheight: 660px;
   }
 }
