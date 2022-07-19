@@ -1110,7 +1110,7 @@ body main footer span {
 }
 
 @media screen and (min-width: 1600px) {
-  .nav-elements{
+  .nav-elements {
     gap: 2.5rem !important;
   }
 
@@ -1361,8 +1361,8 @@ body main footer span {
   body {
     --testiwidth: 45vw;
   }
-  
-  .scroll{
+
+  .scroll {
     font-size: 1rem !important;
   }
 
