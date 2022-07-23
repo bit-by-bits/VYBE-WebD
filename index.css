@@ -1065,6 +1065,14 @@ body main footer span {
     gap: 3rem !important;
   }
 
+  .hiw-title{
+    transform: translateY(-3rem);
+  }
+  
+  .hiw-content{
+    transform: translateY(-1.5rem);
+  }
+
   .q-ham {
     height: 7rem !important;
   }
