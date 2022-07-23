@@ -114,15 +114,31 @@ window.addEventListener("click", (element) => {
 });
 
 if (screen.width < 861) {
-  document.getElementById("page-1").innerHTML = `
-<img src="Assets/hand.png" />
-<div id="home">
+  document.getElementById("page-1").innerHTML =`
+  <img src="Assets/hand.png" />
+
+  <div id="home">
     <div class="home-title">
       <span>Needles will</span><span>Never</span><span>Sting Again!</span>
     </div>
+
     <div class="home-content">
       Pain-free procedures are now at your fingertips
     </div>
   </div>
+`;
+} else {
+  document.getElementById("page-1").innerHTML = `
+        <div id="home">
+          <div class="home-title">
+            <span>Needles will</span><span>Never</span><span>Sting Again!</span>
+          </div>
+
+          <div class="home-content">
+            Pain-free procedures are now at your fingertips
+          </div>
+        </div>
+
+        <img src="Assets/hand.png" />
   `;
 }
