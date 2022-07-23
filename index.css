@@ -229,7 +229,7 @@ body header nav .nav-elements {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 1.7rem;
+  gap: 2rem;
 }
 
 body header nav .nav-elements a {
@@ -1144,7 +1144,7 @@ body main footer span {
 
 @media screen and (min-width: 1600px) {
   .nav-elements {
-    gap: 2.5rem !important;
+    gap: 3rem !important;
   }
 
   .form-input,
@@ -1473,7 +1473,7 @@ body main footer span {
 
 @media screen and (max-width: 950px) {
   .nav-elements {
-    gap: 1rem !important;
+    gap: 1.2rem !important;
   }
 
   .nav-elements a {
