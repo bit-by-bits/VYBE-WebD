@@ -503,6 +503,20 @@ body main .page-3 .mini-vybe-band {
   display: none;
 }
 
+.nav-logos {
+  gap: 0.4rem;
+  right: 4rem;
+  top: 2rem;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+}
+
+.nav-logos i {
+  color: #03658c;
+  font-size: 1.5rem;
+}
+
 body main .page-3 .vybe-extra-two {
   color: #03658c;
   font-weight: 500;
@@ -1473,7 +1487,7 @@ body main footer span {
     visibility: hidden !important;
   }
 
-  #page-1{
+  #page-1 {
     flex-direction: row !important;
   }
 }
@@ -1485,6 +1499,10 @@ body main footer span {
       -webkit-gradient(linear, left top, left bottom, from(#d7f1fc), to(white));
     background-image: url("../Assets/frame2.png"),
       linear-gradient(#d7f1fc, white);
+  }
+
+  .nav-logos {
+    display: none !important;
   }
 
   .contact-form-message {
