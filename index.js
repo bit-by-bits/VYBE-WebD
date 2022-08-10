@@ -1,4 +1,4 @@
-const form_submit = document.forms["form-1"];
+const form_submit = document.forms["sheetdb-form"];
 const car_left = document.getElementById("1");
 const car_middle = document.getElementById("2");
 const car_right = document.getElementById("3");

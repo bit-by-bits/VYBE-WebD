@@ -290,7 +290,7 @@
       </article>
       <article id="contact-us">
         <div class="contact-form">
-          <form id="form-1">
+          <form id="sheetdb-form" action="https://sheetdb.io/api/v1/qo9ygznctwysy" method="post">
             <input
               autocomplete="off"
               required
@@ -298,6 +298,7 @@
               type="text"
               placeholder="NAME"
               class="form-input"
+              name="data[name]"
             />
             <input
               autocomplete="off"
@@ -306,6 +307,7 @@
               type="text"
               placeholder="PHONE"
               class="form-input"
+              name="data[phone]"
             />
             <input
               autocomplete="off"
@@ -314,6 +316,7 @@
               type="text"
               placeholder="CITY"
               class="form-input"
+              name="data[city]"
             />
             <input
               autocomplete="off"
@@ -322,12 +325,26 @@
               type="text"
               placeholder="EMAIL"
               class="form-input"
+              name="data[email]"
             />
             <div>
               <input type="submit" value="Submit" class="input-btn" />
               <input type="reset" value="Clear" class="input-btn" />
             </div>
           </form>
+          <script>
+            var form = document.getElementById('sheetdb-form');
+            form.addEventListener("submit", e => {
+              e.preventDefault();
+              fetch(form.action, {
+                method: "POST",
+                body: new FormData(document.getElementById('sheetdb-form'))
+              }).then(resp => resp.json())
+              .then((html)=> {
+                
+              })
+            })
+          </script>
           <div class="form-2">
             <div class="contact-form-title">
               Thank you for reaching out.<br /><i>We'll VYBE for sure.</i>

@@ -750,7 +750,7 @@ body main #contact-us {
   padding: 4rem 10rem;
 }
 
-body main #contact-us .contact-form #form-1 {
+body main #contact-us .contact-form #sheetdb-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -770,8 +770,8 @@ body main #contact-us .contact-form #form-1 {
   gap: 10px;
 }
 
-body main #contact-us .contact-form #form-1 .form-input,
-body main #contact-us .contact-form #form-1 .input-btn {
+body main #contact-us .contact-form #sheetdb-form .form-input,
+body main #contact-us .contact-form #sheetdb-form .input-btn {
   width: 28vw;
   height: 2.6rem;
   text-transform: uppercase;
@@ -789,7 +789,7 @@ body main #contact-us .contact-form #form-1 .input-btn {
   padding: 1rem;
 }
 
-body main #contact-us .contact-form #form-1 div {
+body main #contact-us .contact-form #sheetdb-form div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -806,7 +806,7 @@ body main #contact-us .contact-form #form-1 div {
   gap: 5px;
 }
 
-body main #contact-us .contact-form #form-1 div .input-btn {
+body main #contact-us .contact-form #sheetdb-form div .input-btn {
   width: calc(14vw - 2.5px);
   padding: 0;
   display: -webkit-box;
@@ -824,7 +824,7 @@ body main #contact-us .contact-form #form-1 div .input-btn {
   letter-spacing: 1px;
 }
 
-body main #contact-us .contact-form #form-1 div .input-btn:hover {
+body main #contact-us .contact-form #sheetdb-form div .input-btn:hover {
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -1946,7 +1946,7 @@ body main footer span {
     align-items: center !important;
   }
 
-  body main #contact-us #form-1,
+  body main #contact-us #sheetdb-form,
   body main #contact-us .form-2 {
     width: 70vw !important;
     max-width: 70vw !important;
