@@ -114,7 +114,7 @@ window.addEventListener("click", (element) => {
 });
 
 if (screen.width < 861) {
-  document.getElementById("page-1").innerHTML =`
+  document.getElementById("page-1").innerHTML = `
   <img src="Assets/hand.png" />
 
   <div id="home">
