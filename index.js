@@ -59,6 +59,7 @@ window.addEventListener("scroll", () => {
 
 form_submit.addEventListener("submit", (e) => {
   e.preventDefault();
+
   form_submit.style.display = "none";
   document.querySelector(".form-2").style.display = "block";
 });
@@ -91,15 +92,15 @@ document.querySelector(".menu-sign").addEventListener("click", () => {
   is_open = true;
 });
 
-document.querySelector(".fa-arrow-right").addEventListener("click", () => {
-  close_ham();
-});
+document
+  .querySelector(".fa-x")
+  .addEventListener("click", () => close_ham());
 
 function close_ham() {
   ham.style.animation = "ham-out 0.6s linear";
 
   setTimeout(() => {
-    ham.style.right = "-50vw";
+    ham.style.right = "-55vw";
   }, 600);
 
   is_open = false;
@@ -107,8 +108,11 @@ function close_ham() {
 
 window.addEventListener("click", (element) => {
   if (is_open) {
-    let e = element.target.className;
-    if (e != "menu-sign" && e != "ham" && e != "ham-link" && e != "q-ham")
+    const e = element.target.className;
+    e != "menu-sign" &&
+      e != "ham" &&
+      e != "ham-link" &&
+      e != "q-ham" &&
       close_ham();
   }
 });
