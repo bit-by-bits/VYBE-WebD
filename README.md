@@ -4,5 +4,5 @@ Developed by [Aditya](https://github.com/cry0genic) and [me](https://github.com/
 
 Website displays the product and its features along with few support links to company's social media handles. A contact form has been provided for reaching out to Qtanea as well.
 
-Demo Link
-https://bit-by-bits.github.io/VYBE-WebD/
+Demo Link For The Website: <br />
+[Click Here To Follow](https://bit-by-bits.github.io/VYBE-WebD/)
