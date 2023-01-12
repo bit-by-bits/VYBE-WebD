@@ -56,7 +56,7 @@ body {
   user-select: none;
   background-position: top;
   background-size: contain;
-  background-image: url("../Assets/frame.png"), linear-gradient(#d7f1fc, white);
+  background-image: url("../assets/frame.png"), linear-gradient(#d7f1fc, white);
   background-repeat: no-repeat;
   overflow-x: hidden;
   font-family: "Roboto";
@@ -637,7 +637,7 @@ body main #contact-us {
   padding: 4rem 10rem;
 }
 
-body main #contact-us .contact-form #sheetdb-form {
+body main #contact-us .contact-form #sheetdb-form-1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -646,8 +646,8 @@ body main #contact-us .contact-form #sheetdb-form {
   gap: 10px;
 }
 
-body main #contact-us .contact-form #sheetdb-form .form-input,
-body main #contact-us .contact-form #sheetdb-form .input-btn {
+body main #contact-us .contact-form #sheetdb-form-1 .form-input,
+body main #contact-us .contact-form #sheetdb-form-1 .input-btn {
   width: 28vw;
   height: 2.6rem;
   text-transform: uppercase;
@@ -665,7 +665,7 @@ body main #contact-us .contact-form #sheetdb-form .input-btn {
   padding: 1rem;
 }
 
-body main #contact-us .contact-form #sheetdb-form div {
+body main #contact-us .contact-form #sheetdb-form-1 div {
   display: flex;
   flex-direction: "row";
   justify-content: space-between;
@@ -673,7 +673,7 @@ body main #contact-us .contact-form #sheetdb-form div {
   gap: 5px;
 }
 
-body main #contact-us .contact-form #sheetdb-form div .input-btn {
+body main #contact-us .contact-form #sheetdb-form-1 div .input-btn {
   width: calc(14vw - 2.5px);
   padding: 0;
   display: flex;
@@ -685,7 +685,7 @@ body main #contact-us .contact-form #sheetdb-form div .input-btn {
   letter-spacing: 1px;
 }
 
-body main #contact-us .contact-form #sheetdb-form div .input-btn:hover {
+body main #contact-us .contact-form #sheetdb-form-1 div .input-btn:hover {
   cursor: pointer;
   transition: all 0.3s;
   background-color: #5094ac;
@@ -1290,7 +1290,7 @@ body main footer div img {
 @media screen and (max-width: 860px) {
   body {
     --testiwidth: 70vw;
-    background-image: url("../Assets/frame2.png"),
+    background-image: url("../assets/frame2.png"),
       linear-gradient(#d7f1fc, white);
   }
 
@@ -1331,7 +1331,7 @@ body main footer div img {
   }
 
   #page-1 {
-    flex-direction: column-reverse;
+    flex-direction: column;
     height: 50rem;
     margin-top: 0 !important;
   }
@@ -1650,7 +1650,7 @@ body main footer div img {
   }
 
   body {
-    background-image: url("../Assets/frame3.png"),
+    background-image: url("../assets/frame3.png"),
       linear-gradient(#d7f1fc, white);
     --testiwidth: 75vw;
   }
@@ -1681,7 +1681,7 @@ body main footer div img {
     align-items: center !important;
   }
 
-  body main #contact-us #sheetdb-form,
+  body main #contact-us #sheetdb-form-1,
   body main #contact-us .form-2 {
     width: 70vw !important;
     max-width: 70vw !important;
