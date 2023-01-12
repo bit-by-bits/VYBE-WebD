@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:-ms-input-placeholder {
+  color: #106d92;
+}
+
+::-moz-placeholder {
+  color: #106d92;
+}
+
+::placeholder {
+  color: #106d92;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #106d92;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: -webkit-grab;
+  cursor: grab;
+  background: #89d2e8;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  color: #060808;
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0;
+  text-decoration: none;
+  background: url("/assets/registration/background.png") no-repeat fixed;
+  background-size: 100vw 100vh;
+}
+
+.form_wrapper {
+  width: 100%;
+}
+
+.form_main {
+  margin: 1.4rem;
+  padding: 4rem 3rem;
+  border: 2px solid #182f47;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_header {
+  width: 100%;
+}
+
+.q-logo {
+  float: right;
+}
+
+.form_title {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #182f47;
+}
+
+.form_greet_1,
+.form_greet_2 {
+  color: #182f47;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form_greet_2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.form_greet_3 {
+  margin: 53px 0 0;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.form_prompt {
+  margin: 35px 0;
+  text-align: center;
+}
+
+:root {
+  --main-blue: #71b7e6;
+  --main-purple: #9b59b6;
+  --main-grey: #ccc;
+  --sub-grey: #d9d9d9;
+}
+
+.form_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  border: solid 2px #182f47;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+}
+
+.form_body .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+.form_body .title::before {
+  content: "";
+  position: absolute;
+  height: 3.5px;
+  width: 40px;
+  background: linear-gradient(135deg, var(--main-blue), var(--main-purple));
+  left: 0;
+  bottom: 0;
+}
+
+.form_body form .form_user {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .form_user .form_input {
+  width: calc(100% / 2 - 20px);
+  margin-bottom: 15px;
+}
+
+.form_user .form_input .form_input_details {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form_user .form_input input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid var(--main-grey);
+  padding: 0.3rem 1rem;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.form_user .form_input input:focus {
+  border-color: var(--main-purple);
+}
+
+form .form_gender_details .form_gender_title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+form .form_gender_details .form_gender_category {
+  display: flex;
+  width: 80%;
+  margin: 15px 0;
+  justify-content: space-between;
+}
+
+.form_gender_details .form_gender_category label {
+  display: flex;
+  align-items: center;
+}
+
+.form_gender_details .form_gender_category .dot {
+  height: 18px;
+  width: 18px;
+  background: var(--sub-grey);
+  border-radius: 50%;
+  margin: 10px;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#male:checked ~ .form_gender_category .one,
+#female:checked ~ .form_gender_category .two,
+#others:checked ~ .form_gender_category .three {
+  border-color: var(--sub-grey);
+  background: var(--main-purple);
+}
+
+form input[type="radio"] {
+  display: none;
+}
+
+form .button {
+  height: 45px;
+  margin: 45px 0;
+}
+
+form .button input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  background: linear-gradient(135deg, var(--main-blue), var(--main-purple));
+  transition: all 0.3s ease;
+}
+
+form .button input:hover {
+  cursor: pointer;
+  background: linear-gradient(-135deg, var(--main-blue), var(--main-purple));
+}
+
+.form_footer,
+.form_success {
+  margin-top: 2rem;
+  font-family: Poppins, sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.form_success {
+  color: green;
+  font-weight: 500;
+  display: none;
+}
+
+.form_footer_link {
+  font-family: Poppins, sans-serif;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.form_footer_link:hover {
+  color: #182f47;
+}
+
+@media only screen and (max-width: 1200px) {
+  .form_title {
+    font-size: 3rem;
+  }
+
+  .q-logo {
+    transform: scale(0.8) translateY(-1rem);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .form_title {
+    font-size: 2.4rem;
+    text-align: left;
+  }
+
+  .q-logo {
+    transform: scale(0.7) translate(2rem, -3rem);
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .form_header {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .form_title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .form_greet_1 {
+    font-size: 1.2rem;
+  }
+
+  .form_greet_2 {
+    font-size: 1.4rem;
+  }
+
+  .q-logo {
+    transform: scale(0.8);
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 584px) {
+  .form_body {
+    max-width: 100%;
+  }
+
+  form .form_user .form_input {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  form .form_gender_details .form_gender_category {
+    width: 100%;
+  }
+
+  .form_user::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .form_main{
+    margin: 1rem;
+    padding: 3rem 1rem ;
+  }
+
+  form .form_gender_details .form_gender_category {
+    flex-direction: column;
+  }
+}
