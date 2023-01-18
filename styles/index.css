@@ -43,13 +43,13 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   cursor: -webkit-grab;
   cursor: grab;
-  background: #89D2E8;
+  background: #89d2e8;
 }
 
 body {
   --testiwidth: 35vw;
   --testiheight: 800px;
-  
+
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -229,11 +229,14 @@ body main #page-1 {
   justify-content: space-between;
   align-items: center;
   margin-top: 1rem;
+  /* width: 100vw;
+  overflow-x: hidden; */
 }
 
 body main #page-1 img {
-  /* transform: scaleX(-1); */
+  transform: rotate(2deg) translateX(8px);
   width: 48vw;
+  overflow: hidden;
 }
 
 body main #page-1 #home {
@@ -287,6 +290,7 @@ body main .get-vybe {
   background: #03658c;
   box-shadow: var(--shadow);
   transition: all 0.45s ease;
+  scale: 0.9;
 }
 
 body main .get-vybe:hover {
@@ -1360,9 +1364,9 @@ body main footer div img {
   }
 
   .get-vybe {
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
     padding: 0.5rem 0.8rem !important;
-    border-radius: 15px !important;
+    transform: translateY(2rem) !important;
   }
 
   .vybe-extra-one {
@@ -1484,6 +1488,16 @@ body main footer div img {
 @media screen and (max-width: 800px) {
   #page-1 img {
     width: 80vw !important;
+  }
+
+  #page-1 {
+    scale: 0.9;
+    transform: translateY(-4rem);
+  }
+
+  .get-vybe {
+    transform: translateY(-2rem) !important;
+    margin-bottom: -10rem;
   }
 }
 
@@ -1727,6 +1741,7 @@ body main footer div img {
 
 @media screen and (max-width: 400px) {
   #page-1 {
+    transform: translateY(-2rem);
     height: 35rem !important;
   }
 
@@ -1774,6 +1789,12 @@ body main footer div img {
 
   .menu-sign {
     height: 1.8rem !important;
+  }
+}
+
+@media screen and (max-width: 400px) and (max-height: 700px) {
+  .get-vybe {
+    transform: scale(0.9) translateY(-3rem) !important;
   }
 }
 

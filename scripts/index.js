@@ -44,7 +44,7 @@ function add_classes(e) {
 window.addEventListener("scroll", () => {
   not_counted_before &&
     window.scrollY >
-      document.querySelector(".hand-band").getBoundingClientRect().top &&
+      document.querySelector(".hand-band")?.getBoundingClientRect().top &&
     ((not_counted_before = !1),
     document.querySelectorAll(".vb-grid-item").forEach((e) => {
       var t = parseInt(e.getAttribute("count-upto")),

@@ -1,27 +1,3 @@
-// const route = (event) => {
-//     event = event || window.event;
-//     event.preventDefault();
-//     window.history.pushState({}, "", event.target.href);
-//     handleLocation();
-// };
-
-// const routes = {
-//     "/": "/pages/main.html",
-//     "/registration": "/pages/reg.html",
-// };
-
-// const handleLocation = async () => {
-//     const path = window.location.pathname;
-//     const route = routes[path];
-//     const html = await fetch(route).then((data) => data.text());
-//     document.getElementById("root").innerHTML = html;
-// };
-
-// window.onpopstate = handleLocation;
-// window.route = route;
-
-// handleLocation();
-
 const data = [
   `
 <link rel="stylesheet" href="/styles/index.css" />
@@ -450,9 +426,7 @@ function homeHandler() {
       else if (arr[arr.length - 1] == "form.js") scripts[i].remove();
     }
 
-  const content = data[0];
-  draw(content);
-
+  draw(data[0]);
   setTimeout(() => {
     const script1 = document.createElement("script");
     script1.setAttribute("src", "/scripts/form.js");
@@ -476,9 +450,7 @@ function regHandler() {
       if (arr[arr.length - 1] == "form.js") scripts[i].remove();
     }
 
-  const content = data[1];
-  draw(content);
-
+  draw(data[1]);
   setTimeout(() => {
     const script = document.createElement("script");
     script.setAttribute("src", "/scripts/form.js");
@@ -489,7 +461,6 @@ function regHandler() {
 }
 
 const routes = [];
-
 function registerRoute(path, callback) {
   routes[path] = callback;
 }
@@ -504,7 +475,8 @@ function resolveRouteFromPath(path) {
 }
 
 function getPathFromHashRoute() {
-  let hash = window.location.hash;
+  const hash = window.location.hash;
+  console.log("/" + hash.substring(1));
   if (!hash) return "/";
   return "/" + hash.substring(1);
 }
