@@ -1,92 +1,117 @@
-<link rel="stylesheet" href="/styles/reg.css">
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="form_wrapper">
-  <div class="form_main">
-    <div class="form_header">
-      <img class="q-logo" src="/assets/registration/q-logo.png" width="173" style="margin-bottom: 1rem;">
-      <p class="form_title">We are so glad our<br>frequencies have matched!</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <script src="https://kit.fontawesome.com/ef6a6bed90.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/styles/reg.css">
+  <title>VYBE</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-77BD229RB0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-77BD229RB0');
+  </script>
+</head>
+
+<body>
+  <div class="form_wrapper">
+    <div class="form_main">
+      <div class="form_header">
+        <img class="q-logo" src="../assets/registration/q-logo.png" width="173" style="margin-bottom: 1rem;">
+        <p class="form_title">We are so glad our<br>frequencies have matched!</p>
+      </div>
+
+      <p class="form_greet_1">We wish you</p>
+      <p class="form_greet_2">Good VYBEs Only</p>
+      <p class="form_greet_3">At Qtanea, improving the doctor-patient equation is our priority. <br>
+        Your addition to our family matters!
+      </p>
+
+      <p class="form_prompt">Fill this form to register and avail your 6-month warranty.</p>
+
+      <div class="form_body">
+        <div class="title">Warranty Registration</div>
+        <form id="sheetdb-form-2" action="https://sheetdb.io/api/v1/bpvlz1f1baze6" method="post">
+          <div class="form_user">
+            <div class="form_input">
+              <label for="name" class="form_input_details">Full Name</label>
+              <input required name="data[name]" type="text" placeholder="Rahul Gupta" id="name">
+            </div>
+
+            <div class="form_input">
+              <label for="clinic" class="form_input_details">Clinic Name</label>
+              <input required name="data[clinic]" type="text" placeholder="Kaya Clinic" id="clinic">
+            </div>
+
+            <div class="form_input">
+              <label for="city" class="form_input_details">Your City</label>
+              <input required name="data[city]" type="text" placeholder="New Delhi" id="city">
+            </div>
+
+            <div class="form_input">
+              <label for="email" class="form_input_details">Email ID</label>
+              <input required name="data[email]" type="email" placeholder="rahul.gup123@gmail.com" id="email">
+            </div>
+
+            <div class="form_input">
+              <label for="phone" class="form_input_details">Mobile Number</label>
+              <input required name="data[phone]" type="tel" pattern="[0-9]{10}" placeholder="9876543210" id="phone">
+            </div>
+
+            <div class="form_input">
+              <label for="date" class="form_input_details">Date Of Purchase</label>
+              <input required name="data[date]" type="date" placeholder="rahul.gup123@gmail.com" id="date">
+            </div>
+          </div>
+
+          <div class="form_gender_details">
+            <input type="radio" name="gender" id="male" name="data[male]">
+            <input type="radio" name="gender" id="female" name="data[female]">
+            <input type="radio" name="gender" id="others" name="data[others]">
+            <span class=".form_gender_title">Gender (optional)</span>
+
+            <div class="form_gender_category">
+              <label for="male">
+                <span class="dot one"></span>
+                <span>Male</span>
+              </label>
+
+              <label for="female">
+                <span class="dot two"></span>
+                <span>Female</span>
+              </label>
+
+              <label for="others">
+                <span class="dot three"></span>
+                <span>Others</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="button">
+            <input type="submit" value="Register">
+          </div>
+        </form>
+      </div>
+
+      <p class="form_success">
+        Thank you for joining this amazing family!
+      </p>
+
+      <p class="form_footer">Follow us on Instagram
+        <a class="form_footer_link" href="https://www.instagram.com/qtaneasolutions">@qtaneasolutions</a>
+        to get an additional three-month warranty
+      </p>
     </div>
-
-    <p class="form_greet_1">We wish you</p>
-    <p class="form_greet_2">Good VYBEs Only</p>
-    <p class="form_greet_3">At Qtanea, improving the doctor-patient equation is our priority. <br>
-      Your addition to our family matters!
-    </p>
-
-    <p class="form_prompt">Fill this form to register and avail your 6-month warranty.</p>
-
-    <div class="form_body">
-      <div class="title">Warranty Registration</div>
-      <form id="sheetdb-form-2" action="https://sheetdb.io/api/v1/bpvlz1f1baze6" method="post">
-        <div class="form_user">
-          <div class="form_input">
-            <label for="name" class="form_input_details">Full Name</label>
-            <input required name="data[name]" type="text" placeholder="Rahul Gupta" id="name">
-          </div>
-
-          <div class="form_input">
-            <label for="clinic" class="form_input_details">Clinic Name</label>
-            <input required name="data[clinic]" type="text" placeholder="Kaya Clinic" id="clinic">
-          </div>
-
-          <div class="form_input">
-            <label for="city" class="form_input_details">Your City</label>
-            <input required name="data[city]" type="text" placeholder="New Delhi" id="city">
-          </div>
-
-          <div class="form_input">
-            <label for="email" class="form_input_details">Email ID</label>
-            <input required name="data[email]" type="email" placeholder="rahul.gup123@gmail.com" id="email">
-          </div>
-
-          <div class="form_input">
-            <label for="phone" class="form_input_details">Mobile Number</label>
-            <input required name="data[phone]" type="tel" pattern="[0-9]{10}" placeholder="9876543210" id="phone">
-          </div>
-
-          <div class="form_input">
-            <label for="date" class="form_input_details">Date Of Purchase</label>
-            <input required name="data[date]" type="date" placeholder="rahul.gup123@gmail.com" id="date">
-          </div>
-        </div>
-
-        <div class="form_gender_details">
-          <input type="radio" name="gender" id="male" name="data[male]">
-          <input type="radio" name="gender" id="female" name="data[female]">
-          <input type="radio" name="gender" id="others" name="data[others]">
-          <span class=".form_gender_title">Gender (optional)</span>
-
-          <div class="form_gender_category">
-            <label for="male">
-              <span class="dot one"></span>
-              <span>Male</span>
-            </label>
-
-            <label for="female">
-              <span class="dot two"></span>
-              <span>Female</span>
-            </label>
-
-            <label for="others">
-              <span class="dot three"></span>
-              <span>Others</span>
-            </label>
-          </div>
-        </div>
-
-        <div class="button">
-          <input type="submit" value="Register">
-        </div>
-      </form>
-    </div>
-
-    <p class="form_success">
-      Thank you for joining this amazing family!
-    </p>
-
-    <p class="form_footer">Follow us on Instagram
-      <a class="form_footer_link" href="https://www.instagram.com/qtaneasolutions">@qtaneasolutions</a>
-      to get an additional three-month warranty
-    </p>
   </div>
-</div>
+
+</body>
+
+</html>

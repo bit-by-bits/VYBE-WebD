@@ -800,7 +800,7 @@ body main footer span {
 }
 
 body main footer div img {
-  max-width: 12vw;
+  height: 80px;
 }
 
 @-webkit-keyframes ear-band {
@@ -1521,6 +1521,16 @@ body main footer div img {
 @media screen and (max-width: 700px) {
   #page-1 {
     height: 45rem !important;
+  }
+
+  footer div{
+    flex-direction: column;
+  }
+
+  footer div img{
+    height: fit-content;
+    min-width: 20vw !important;
+    max-width: 50vw !important;
   }
 
   #home {
