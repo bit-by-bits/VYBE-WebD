@@ -803,6 +803,10 @@ body main footer div img {
   height: 80px;
 }
 
+.show-after{
+  display: none;
+}
+
 @-webkit-keyframes ear-band {
   0% {
     transform: none;
@@ -1523,11 +1527,21 @@ body main footer div img {
     height: 45rem !important;
   }
 
-  footer div{
+  footer div {
     flex-direction: column;
   }
 
-  footer div img{
+  .hide-after {
+    display: none;
+  }
+
+  .show-after {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  footer div img {
     height: fit-content;
     min-width: 20vw !important;
     max-width: 50vw !important;
